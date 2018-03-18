@@ -1,0 +1,22 @@
+<p id="forColor">
+  <b>Session 7 - directives-asgnmnt works!</b>
+</p>
+
+<!-- 1. In a component create two variables title, name and lastname and on HTML page
+create a text box for name and lastname do two-way binding. -->
+Name : <input type="text" [(ngModel)]='name'/>
+<div>variable <b>Name</b> for Two way data binding - <b>{{name}}</b></div>
+<br><br>
+Last Name : <input type="text" [(ngModel)]='lastname'/>
+ <div> variable <b>lastname</b> for Two way data binding - <b>{{lastname}}</b></div>
+<br><br>
+<!--2. The title should be hidden. 
+    3. Create a button and attach an event handler to it. When you click that button the
+       title should appear. HTML page should display the value that has been changed in
+       text box in the title. -->
+
+<button (click)='clickMe()'>click Me to see title which is hidden</button>
+<br>
+<div *ngIf=hiddenTitle>Hidden value in Title field is : <b>{{title}}</b></div>
+
+  <!-- <div [hidden]="SomeVar"> {{t1.value}}</div> -->
